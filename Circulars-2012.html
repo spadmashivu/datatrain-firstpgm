@@ -1,0 +1,1850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0089)https://www.cbic.gov.in/htdocs-cbec/customs/cs-circulars/cs-circulars-2012/circ16-2012-cs -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="shortcut icon" href="https://www.cbic.gov.in/resources/css/cupertino/images/favicon.ico">
+<noscript>
+	<link rel="stylesheet" type="text/css"
+		href="/resources/css/cupertino/no-script.css">
+</noscript>
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="/resources/css/cupertino/styleIE7.css">
+<![endif]-->
+<!--[if gt IE 7]>
+	<link rel="stylesheet" type="text/css" href="/resources/css/cupertino/styleIE.css" />
+<![endif]-->
+ <link rel="stylesheet" type="text/css" href="./Circulars-2012_files/style.css">
+<!--
+	<link rel="stylesheet" type="text/css"
+	href="/resources/css/cupertino/contactus.css">
+-->	
+<link rel="stylesheet" type="text/css" href="./Circulars-2012_files/style.css">  
+    
+<!--
+<style>
+#stickyheader{position:initial!important}
+.navigation{background:#fff;width:100%}
+</style>-->
+<script type="text/javascript" src="./Circulars-2012_files/jquery-3.5.1.min.js.download"></script>
+
+<script type="text/javascript" src="./Circulars-2012_files/jquery.datavalidation.js.download"></script>
+	<script type="text/javascript" src="./Circulars-2012_files/accordion.js.download"></script>
+<script type="text/javascript">
+	$(function() {
+		if($("link[href='/resources/css/cupertino/style.css']").prop('sheet').cssRules.length == 0){ 
+		    //remove sticky header
+			 $('.navigation').removeAttr('id');
+		 }
+		// Check the initial Poistion of the Sticky Header
+	var stickyHeaderTop = $('#stickyheader').offset().top;
+
+		  $(window).scroll(function(){
+		         if( $(window).scrollTop() > stickyHeaderTop ) {
+
+							 var ss = document.styleSheets;
+							for (var i = 0, max = ss.length; i < max; i++) {
+							if (ss[i].href == "/resources/css/cupertino/style.css")
+							 $('#stickyheader').css({position: 'fixed', top: '0',width: '99%px',"z-index": "1000"});
+
+							 $('#stickyheader').css({position: 'fixed', top: '0px',width: '99%px',"z-index": "1000"});
+
+							 $('#stickyalias').css('display', 'block');
+							}
+							
+		                
+		         } else {
+		                 $('#stickyheader').css({position: 'static', top: '0',width: '100%'});
+		                 
+		                 $('#stickyalias').css('display', 'none');
+		                 
+		         }
+		 });  
+	});
+</script>
+
+
+
+
+<script type="text/javascript" src="./Circulars-2012_files/jquery-3.5.1.js.download"></script>
+<script type="text/javascript" src="./Circulars-2012_files/jquery-ui-1.10.4.custom.js.download"></script>
+<script type="text/javascript" src="./Circulars-2012_files/font_magnifier.js.download"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#infoToggler").click(function() {
+			$(this).find('img').toggle();
+		});
+	});	
+</script>
+
+<script type="text/javascript">
+$(document).ready(function() {	
+	var sessionValue = 'style.css';
+	if(sessionValue=="style_bw.css")
+		{
+$('.navigation ul li').focusin(function(){$(this).css({"background-color":"#fff","border":"1px solid #4891dc","border-top":"3px solid #000"});});
+$('.navigation ul li ul li').focusin(function(){$(this).css("border-bottom","1px solid #000");});
+		}
+	else{
+		$('.navigation ul li').focusin(function(){$(this).css({"background-color":"#f5f9f9","border":"1px solid #4891dc","border-top":"3px solid #4891dc"});});
+		$('.navigation ul li ul li').focusin(function(){$(this).css("border-bottom","1px solid #dad6d6");});
+		
+	}
+$('.navigation ul li').focusout(function(){$(this).removeAttr("style");$(this).children('a').removeAttr("style");});
+$('.navigation ul ul li a').focusin(function(){$(this).css({"text-decoration":"underline"});});
+$('.navigation ul ul li a').focusout(function(){$(this).removeAttr("style");});
+$('.navigation ul li ul li').focusin(function(){$(this).css("border","none");});
+$('.navigation ul li.first').focusout(function(){$(this).css({"width":"46px"});});
+$('.navigation ul li ul li').focusout(function(){$(this).removeAttr("style");});
+$( "#tabs1" ).tabs();
+});
+</script>
+<script type="text/javascript">		
+	function showSecondLevel(e, y) {		
+	var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;		
+	$(e.keyCode).delay(1);
+		if (e.keyCode == 40){ 		
+			$(y).children('ul').attr('style','display:block;z-index:1000;position:absolute;width:220px');
+		}
+		if ((e.keyCode == 38 || e.keyCode == 27)) {
+			$(y).children('ul').attr('style', 'display:none;');
+			$(y).children('ul ul').attr('style', 'display:none;');
+		}	
+	}
+	
+	function showLastLevel(e, y) {
+		var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+		if (e.keyCode == 39) {
+			$(y)
+					.children('ul ul')
+					.attr('style',	'display:block; z-index:1000;position:absolute; left:98%');
+
+		}
+		if (e.keyCode == 37) {
+			$(y).children('ul ul').attr('style', 'display:none;');
+		}
+	} 
+
+	
+	
+
+	function mouseIn(y) {
+		var mydiv=$(y).children('ul').width(); 
+		$(y).children('ul').attr('style', 'display:block;width:'+mydiv+'px');
+	}
+	
+	function mouseOut(y) {
+		var mydiv=$(y).children('ul').width(); 
+		$(y).children('ul').attr('style', 'display:none;width:'+mydiv+'px');
+	}
+
+	$(document).click(function() {
+		$('.navigation ul ul').attr('style', 'display:none;');
+	})
+	
+	function hideSecondLevel(y) {
+		
+		$('.navigation ul ul').attr('style', 'display:none;');
+	}
+	
+	function hideLastLevel(y) {
+		$('.navigation ul ul ul').attr('style', 'display:none;');
+	}
+	function hideSecondLevel_f(y) {
+		var mydiv=$(y).children('ul').width(); 
+		$('.focus_menu ul ul').attr('style', 'display:none;');
+	}
+	
+	function hideLastLevel_f(y) {
+		$('.focus_menu ul ul ul').attr('style', 'display:none;');
+	}
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var sessionValue = 'style.css';
+	
+		if (sessionValue == "style_bw.css"){	
+			$('.focus-menu a.accordian-section-title').focusin(function(){$(this).css({"background-color" : "#6C6666"});$(this).css({"color" : "#fff"});});
+		    $('.focus-menu .accordian-section').focusin(function(){$(this).children('a').css({"background-color" : "#6C6666"});
+			$(this).children('a').css({"color" : "#fff"});
+			});
+		}else{
+			$('.focus-menu a.accordian-section-title').focusin(function() {	$(this).css({"background-color" : "#4891dc"});$(this).css({"color" : "#fff"});});
+		    $('.focus-menu .accordian-section').focusin(function() {$(this).children('a').css({"background-color" : "#4891dc"});$(this).children('a').css({"color" : "#fff"});});
+		}
+			$('.focus-menu .accordian-section').focusout(function() {$(this).children('a').removeAttr("style");$(this).children('a').removeAttr("style");});
+     		$('.focus-menu a.accordian-section-title').focusout(function() {$(this).removeAttr("style");$(this).children('a').removeAttr("style");});
+		    $('.focus-menu .accordian-section div ul li a').focusin(function(){$(this).css({ "text-decoration" : "underline" });});
+		    $('.focus-menu ul li a').focusout(function() {$(this).removeAttr("style");});
+	});
+</script>
+
+<script type="text/javascript">		
+	function showSecondLevelfoc(e, y) {	
+		var keyCode = e ? (e.which ? e.which : e.keyCode) : event.keyCode;
+		
+		if (e.keyCode == 40) { 
+			$('.leftmenu .accordian-section').children('div').attr('style','display:none');
+			$(y).children('div').attr('style','display:block;z-index:1000;width:220px');
+		}
+		if ((e.keyCode == 38 || e.keyCode == 27)) {
+			$(y).children('div').attr('style', 'display:none;');
+			$(y).children('ul ul').attr('style', 'display:none;');
+		}
+	} 
+	function mouseInfoc(y) {
+		var mydiv=$(y).children('.focus-menu div.accordian-section-content').width(); 
+		$(y).children('.focus-menu div.accordian-section-content').attr('style', 'display:block;');	
+	}	
+	function mouseOutfoc(y) {
+		var mydiv=$(y).children('.focus-menu div.accordian-section-content').width(); 
+		$(y).children('.focus-menu div.accordian-section-content').attr('style', 'display:none;width:'+mydiv+'px');
+	}	
+	function hideSecondLevel_foc(y) {	
+		var mydiv=$(y).children('.focus-menu div.accordian-section-content').width(); 
+		$('.focus-menu div.accordian-section-content').attr('style', 'display:none;');
+	}
+</script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$("input[type=radio]").click(function() {
+			$('li').removeClass('checked');
+			$(this).parent().addClass('checked');
+		});
+	});
+</script>
+
+
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".navigation a").each(function() {
+			
+			if (this.href.trim() == window.location) {
+				
+				
+					$(this).parents('li').addClass("active");
+					$(".navigation li li").removeClass("active");
+			
+				
+			}
+		});
+		$(".leftmenu .accordian-section-content a").each(function() {			
+			if (this.href.trim() == window.location) {		
+				$(this).parents('div').parents('div').addClass('active');
+
+			}
+		});
+
+		$("#infoToggler").click(function() {
+			$(this).find('img').toggle();
+		});
+	});	
+</script>
+<script type="text/javascript">
+		$(window).load(function(){
+			$('#m1').liMarquee();
+		})
+		</script> 
+<style type="text/css">
+ul.leftmenu input[type='radio'] {
+	display: none
+}
+</style>
+
+<title>Circulars-2012</title>
+
+</head>
+<body>
+<div class="container">
+<div class="header">
+
+<style>
+.flash {
+	animation-name: flash;
+	animation-duration: 1.0s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-play-state: running;
+	font-weight: bold !important;
+}
+
+@keyframes flash {
+	from {color: #ff952c;}
+    to {color: #3248b5;}
+	
+}
+.navigation li {
+    width: 100px;
+}
+
+.highlight a{
+	
+	font: italic bold 12px Georgia, serif;
+	
+}
+.gac{
+	width: 65px !important;
+	height: 16px !important;
+	
+}
+.gacgst{
+	width: 50px !important;
+	height: 16px !important;
+}
+.gacreg{
+	width: 90px !important;
+	height: 16px !important;
+	
+}
+.gacsml{
+	width: 70px !important;
+	height: 16px !important;
+	
+}
+
+</style>
+<div class="persistent_nav">
+	<ul class="left">
+		<li class="first"><a onfocus="hideLastlevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-circulars/cs-circulars-2012/circ16-2012-cs#maincontent">Skip to main content</a></li>
+		<li class="last"><a href="https://www.cbic.gov.in/index">Home</a></li>
+	</ul>
+	<ul class="right">
+		<li><a onfocus="hideLastlevel(this)" href="https://www.cbic.gov.in/Hindi"><img src="./Circulars-2012_files/hindi_icon.png" title="Hindi" alt="Hindi"></a></li>
+
+		<li><a onfocus="hideLastlevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-circulars/cs-circulars-2012/circ16-2012-cs#"><img src="./Circulars-2012_files/printer_icon.png" onclick="window.print();" title="Print" alt="Print"></a></li>
+
+		<li><a onfocus="hideLastlevel(this)" class="fontdecrease" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-circulars/cs-circulars-2012/circ16-2012-cs#" title="Decrease font">A-</a></li>
+		<li><a onfocus="hideLastlevel(this)" class="fontreset" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-circulars/cs-circulars-2012/circ16-2012-cs#" title="Reset font">A</a></li>
+		<li><a onfocus="hideLastlevel(this)" class="fontincrease" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-circulars/cs-circulars-2012/circ16-2012-cs#" title="Increase font">A+</a></li>
+
+		<li class="last"><a onfocus="hideLastlevel(this)" href="https://www.cbic.gov.in/default"><img src="./Circulars-2012_files/bluetheme_icon.png" alt="Blue Theme" border="0" usemap="#Map" title="Blue theme "></a></li>
+		<li class="last"><a onfocus="hideLastlevel(this)" href="https://www.cbic.gov.in/b-w"><img src="./Circulars-2012_files/conrasttheme_icon.png" alt="Black &amp; white Theme" border="0" usemap="#Map" title="Black &amp; white theme "></a></li>
+	</ul>
+</div>
+<div class="logo_row">
+	<table>
+		<tbody><tr>
+		<td><img height="100px" width="65px" src="./Circulars-2012_files/satyamevJayate.png" alt="emblem"></td>
+		
+		<!--<td><img height="100px" width="100px" src="/resources/css/cupertino/images/GST4.jpg" alt="gstlogo"></td>
+		<td><a href="https://yoga.ayush.gov.in/"><img height="100px" width="100px" src="/resources/css/cupertino/images/IDY Logo.jpg" alt="IDY-Logo"></a></td>
+		-->
+			
+			
+			<td><a href="https://www.cbic.gov.in/index" title="Central Board of Indirect Taxes &amp; Customs, Department of Revenue Ministry of Finance, Government of India">
+					<span class="cbec_logo"><img id="cbicLogoCss" src="./Circulars-2012_files/cbic-logo-new.JPG" alt="CBIC Logo"></span>
+			</a></td>
+			
+			
+			
+			<td>
+			
+				<p style="margin-left:15px; font-weight:bold;">
+						<a href="https://twitter.com/cbic_india" target="_blank" title="Twitter(External website that opens in a new window)">
+						<img src="./Circulars-2012_files/twitter_logo.png" id="logosCss" alt="link to twitter"></a>
+						<a href="https://www.facebook.com/pages/CBEC-Central-Board-of-Excise-and-Customs/109132989432740" target="_blank" title="Facebook(External website that opens in a new window)">
+						<img src="./Circulars-2012_files/facebook_logo.png" id="logosCss" alt="link to "></a>	
+						<a href="https://www.youtube.com/channel/UC4Pwb1Utd_Pu3tEp09gMZlQ" target="_blank" title="YouTube(External website that opens in a new window)">
+						<img src="./Circulars-2012_files/youtube_logo.png" id="logosCss" alt="link to YouTube"></a>
+<!-- 						<a href="#" target="_blank" title="Linkedin(External website that opens in a new window)"> -->
+
+						<a href="https://instagram.com/cbicindia" target="_blank" title="Instagram(External website that opens in a new window)">
+						<img src="./Circulars-2012_files/ig_logo.png" id="logosInstagramCss" alt="link to instagram"></a>
+						<a href="https://www.kooapp.com/profile/cbic" target="_blank" title="koo(External website that opens in a new window)">
+						<img src="./Circulars-2012_files/kuhu_logo.png" id="logosCss" alt="link to Koo"></a>
+						
+						
+				</p>
+				
+				
+<!-- 				<div class="search"> -->
+<!-- 					<form method="post" -->
+
+<!-- 						onsubmit="return Validation();"> -->
+<!-- 						<label for="search"></label> <input type="text" id="search" -->
+<!-- 							name="search" title="Search Box"> <input -->
+<!-- 							class="search_icon" type="submit" value=""> -->
+<!-- 					</form> -->
+<!-- 				</div> -->
+			</td>
+			
+			 <td>
+				<div class="fm_profile">
+					<a target="_blank" title="Finance Minister" href="https://doe.gov.in/minister/meet-union-finance-minister"><img src="./Circulars-2012_files/finance-minister-nirmala.jpg" alt="Finance Minister"></a>
+				</div>
+			</td> 
+		</tr>
+	</tbody></table>
+</div>
+<div class="navigation cl-b" id="stickyheader" style="position: static; top: 0px; width: 100%; z-index: 1000;">
+	<ul style="width:100%">
+		<!--
+		<li class="first" style="width: 60px; height: 16px"><a
+			href="/index"><img
+				src="/resources/css/cupertino/images/home-icon.png"
+				alt="Home"></a></li>
+				-->
+		<li id="navigationSubMenu" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/about-us">About
+				Us</a>
+			<ul id="commonUl">
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/whoweare/whoweare">Who
+						We Are</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/whoweare/ctzen-chtre-new">Citizen
+						Charter</a></li>
+			</ul></li>
+		
+		<li id="navigationSubMenu" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/newgst">GST</a>
+			<ul id="commonUl">
+				<!--<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/excise/Sabka-Vishwas-FAQs-Hindi.pdf" target="_blank">Sabka Vishwas</a></li>-->
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gstoverview">Overview</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://taxinformation.cbic.gov.in/" target="_blank">Acts, Rules, Forms, Notifications, Circulars, Orders, Instructions</a></li>
+				<!--  <li id="commonList"><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/gst/gstrules">Rules</a></li>-->
+				
+<!-- 				<li id="commonList"><a onFocus="hideLastLevel(this)" -->
+
+			<!--	<li id="commonList"><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/gst/gstcirculars">Circulars/Orders</a></li>
+				<li id="commonList"><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/gst/gstInstructions">Instructions</a></li>
+				-->
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gstFaqs">FAQs</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gstreadyreckoner">GST Rates/Ready Reckoner</a></li>
+					
+				
+								
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gstweeklyupdates">GST Update</a></li>
+					
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gstmanual">Manual,SOPs</a></li>
+				
+					
+				
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gstmiscellaneous">Miscellaneous</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/gsthelpdesk">Helpdesk</a></li>
+				
+				<!--<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/Legacy-Dispute">Legacy Dispute Resolution Scheme, 2019</a></li>
+				-->
+				
+			</ul></li>
+		
+		<!-- <li class="sub gac" onKeyUp="showSecondLevel(event,this)"
+			onmouseover="mouseIn(this)" onMouseOut="mouseOut(this)"><a
+			onfocus="hideSecondLevel(this)"
+			href="https://gstawareness.cbic.gov.in" target="_blank">Manthan</a><!--<span class="newblinkAware"></span>-->
+<!-- 		</li> -->
+		
+		<!-- <li class="sub gacreg" onKeyUp="showSecondLevel(event,this)"
+			onmouseover="mouseIn(this)" onMouseOut="mouseOut(this)"><a
+			onfocus="hideSecondLevel(this)"
+			href="https://nacin.onlineregistrationform.org/NACIN/" target="_blank">GSTP/CBLR</a><!--<span class="newblinkAware"></span>-->
+<!-- 		</li> -->
+		<!-- <li class="sub gacreg" onKeyUp="showSecondLevel(event,this)"
+			onmouseover="mouseIn(this)" onMouseOut="mouseOut(this)"><a
+			onfocus="hideSecondLevel(this)"
+			href="/htdocs-servicetax/Legacy-Dispute" target="_blank">SVLDRS</a><!--<span class="newblinkAware"></span>-->
+<!-- 		</li> -->
+		
+		
+		
+		<li id="navigationSubMenu" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs">Customs</a>
+			<ul class="menu_scroll" style="width:202px;">
+			
+				<li><a onfocus="hideLastLevel(this)" href="https://taxinformation.cbic.gov.in/" target="_blank">Acts, Rules, Forms, Notifications, Circulars, Orders, Instructions</a></li>
+					
+<!-- 				<li><a onFocus="hideLastLevel(this)" -->
+
+					
+				<!--<li><a onFocus="hideLastLevel(this)"
+					href="/Customs-Circulars-Instructions">Circulars/
+						Instructions</a></li>
+				-->
+
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/cst2022-010222/cst-idx">Tariff (as on 01.02.2022)</a></li>	
+			
+			
+					<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/cst2021-301221/cst-idx">
+						Tariff (as on 31.12.2021)</a></li>
+
+						
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/cs-manual">Manuals</a></li>	
+			<!--  	<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/customs/cs-act/formatted-htmls/cs-rules-idx">Rules</a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/customs/cs-act/formatted-htmls/cs-regu-idx">Regulations</a></li> -->
+				
+				
+				<!--  <li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/customs/forms_pdf/forms_idx_final">Forms</a></li> -->
+				
+				
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/ecs-cs/ecs-cs-subj-list">Case
+						Law-ECS</a></li>		
+				<li><a onfocus="hideLastLevel(this)" href="https://nacin.onlineregistrationform.org/NACIN/" target="_blank">CBLR</a></li>
+				
+						<li><a href="https://www.cbic.gov.in/htdocs-cbec/customs/Taxation-Other-Laws-Act-2020.pdf" target="_blank">Taxation and Other Laws Act, 2020 dated 29.09.2020</a></li>
+								<li><a href="https://www.cbic.gov.in/htdocs-cbec/customs/Notification-dated-30th-September-2020.pdf" target="_blank">Notification dated 30.09.2020</a></li>
+				<li><a href="https://www.cbic.gov.in/htdocs-cbec/customs/Ordinance-2-2020.pdf" target="_blank">Ordinance 2 of 2020</a></li>
+									<li>Notification :<br><a href="https://www.cbic.gov.in/htdocs-cbec/customs/NN_English_Ordinance_date%20extension.pdf" target="_blank">English</a>
+								<a href="https://www.cbic.gov.in/htdocs-cbec/customs/NN_Hindi_Ordinance_date%20extension.pdf" target="_blank">Hindi</a></li>
+				
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-sez-botm">SEZ</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/dbk-schdule/dbk-idx">Drawback
+						Schedule</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/Legislative_Changes_Budget_2018.pptx">PPT on Legislative changes in Budget 2018-19</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/cs-nom-banks">Nominated
+						Banks for payment of duty</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="http://www.icegate.gov.in/Webappl/?pageID=2-13" target="_blank" title="External Website that opens in a new window">Customs
+						Duty Calculator (new)<span class="icon_external"></span>
+				</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://cip.icegate.gov.in/CIP" target="_blank" title="External Website that opens in a new window">Compliance Information Portal (CIP)<span class="icon_external"></span>
+						<span class="gacblink"></span>
+				</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/bankslst-cs-epay">Authorized
+						Banks for e-payment through ICEGATE</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/ipr-notfns">Intellectual
+						Property Rights(IPR)</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/faq-cs-bonded-warehousing.pdf" target="_blank">FAQ on warehousing</a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/FAQ-Section-65-october-2020.pdf" target="_blank">FAQ on Manufacture and Other Operations<span class="pdf_icon"></span>  <span class="gacblink"></span></a></li>
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/CarotarBrochure_8thOct2020.pdf" target="_blank">CAROTAR Brochure - Revised<span class="pdf_icon"></span>  <span class="gacblink"></span></a></li>
+			</ul></li>
+		<li id="navigationSubMenu" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/central-excise">Central
+				Excise</a>
+			<ul id="commonUl">
+				<!--<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/excise/Sabka-Vishwas-FAQs-Hindi.pdf" target="_blank">Sabka Vishwas</a></li>-->
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://taxinformation.cbic.gov.in/" target="_blank">Acts, Rules, Forms, Notifications, Circulars, Orders, Instructions</a></li> 
+					
+<!-- 				<li id="commonList"><a onFocus="hideLastLevel(this)" -->
+
+				
+				 <!--<li id="commonList"><a onFocus="hideLastLevel(this)"
+					href="/Excise-Circulars-Instructions">Circulars/Instructions</a></li>
+				-->
+				<!--  <li id="commonList"><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/excise/cxrules/cx-rules-main">Rules</a></li> -->
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/excise/cxt2017-2018/cxt-1718-idx">Tariff
+						</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/cx-manual.pdf" target="_blank">Central Excise Manual<span class="pdf_icon">(24.3MB)</span></a></li>
+			<!-- 	<li id="commonList"><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/excise/formidx">Forms</a></li> -->
+				
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/excise/ecs-cx/ecs-cx-subj-list">Case
+						Law-ECS</a></li>
+				
+					
+				
+								
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/excise/37Borders/cx-37borders-idx">Section
+						37B Order</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="http://pccacbec.nic.in/?pageID=3-12" target="_blank">Nominated
+						Banks for payment of duty<span class="icon_external"></span>
+				</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/easiest-idx">E-payment</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/excise/area-based-exemption">Area Based exemption</a></li>
+				<!--<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/Legacy-Dispute">Legacy Dispute Resolution Scheme, 2019</a></li>
+				-->
+				
+			</ul></li>
+		<li id="navigationSubMenu" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/service-tax">Service
+				Tax</a>
+			<ul class="menu_scroll">
+				<!--<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/excise/Sabka-Vishwas-FAQs-Hindi.pdf" target="_blank">Sabka Vishwas</a></li>-->
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/index">Overview</a></li>
+					
+				<li><a onfocus="hideLastLevel(this)" href="https://taxinformation.cbic.gov.in/" target="_blank">Acts, Rules, Forms, Notifications, Circulars, Orders, Instructions</a></li>
+					
+<!-- 				<li><a onFocus="hideLastLevel(this)" -->
+
+				
+			<!--	<li><a onFocus="hideLastLevel(this)"
+					href="/ServiceTax-Circulars-Instructions">Circulars/Instructions</a></li>
+			-->		
+				<li><a href="https://www.cbic.gov.in/htdocs-cbec/press-release/faq-sbc.pdf" target="_blank">FAQ on Swachh Bharat Cess(SBC)</a><span class="pdf_icon">(286 KB)</span></li>
+			<!--	<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/faq-29sept11.pdf"
+					target="_blank">FAQ <span class="pdf_icon">(1.01 MB)</span></a></li>-->
+			<!--	<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/st-act-ason-01apr2017.pdf"
+					target="_blank">Act<span class="pdf_icon">(797 KB)</span></a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/chap6-finact2013">Chapter
+						VI of the Finance Act,2013</a></li>-->
+				
+				<!-- <li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/st-forms-home">Forms</a></li> -->
+				
+				
+				
+				
+				
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/easiest-idx">E-payment</a></li>
+					
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/st-proc-home">Procedures</a></li>
+					
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/acctng-codes-services-notfn482012.pdf" target="_blank">Accounting Codes for Services</a></li>
+				
+			<!--	<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/audit_freqcy_norms">Frequency
+						Norms of Audit of Service Tax Assessees</a></li>-->
+				
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/EducationGuide.pdf" target="_blank">Taxation of Services: An Educational Guide<span class="pdf_icon">(1.22 MB)</span></a></li>
+						
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/mega-exemption-notfn.pdf" target="_blank">Mega Exemption</a>
+							<span class="pdf_icon">(202 KB)</span></li>
+							
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/abatement-notfn.pdf" target="_blank">Abatement Notification</a>
+							<span class="pdf_icon">(152 KB)</span></li>
+						
+				<li><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-servicetax/ecs-st/ecs-st-subj-list">Case
+						Law-ECS</a></li>
+						
+			<!--	<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/Legacy-Dispute">Legacy Dispute Resolution Scheme, 2019</a></li>
+			-->		
+			<!-- <li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/st-profiles-home">Service
+						Profiles (before 01.07.2012)</a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-servicetax/STeducation.pdf?pageID=4-16"
+					target="_blank">Budget-2012: Changes in Service Tax<span
+						class="pdf_icon">(789 KB)</span></a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/rhs-misc/vces/st-vces-idx">VCES-2013</a></li>-->
+			</ul>
+			</li>
+		<!--
+			
+		
+		<li class="sub" onKeyUp="showSecondLevel(event,this)"
+			onmouseover="mouseIn(this)" onMouseOut="mouseOut(this)"><a
+			onfocus="hideSecondLevel(this)"
+			href="/htdocs-cbec/gst">GST</a>
+			<ul>
+				<li><a href="/htdocs-cbec/draft-rules-format">Draft Rules and Formats</a></li>
+				<li><a
+					href="/htdocs-cbec/deptt_offcr/model-gst-law.pdf"
+					target="_blank">Model GST Law<span class="pdf_icon">(1358
+							KB)</span></a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="https://mygov.in/home/54211/discuss/" target="_blank">Discussion
+						on report of Joint Committee on Business Processes of GST<span
+						class="icon_external"></span>
+				</a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="http://dor.gov.in/scgst" target="_blank"
+					title="External Website that opens in a new window">Stakeholder
+						Consultation on the report of Joint Committee on Business
+						Processes of GST <span class="icon_external"></span>
+				</a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/deptt_offcr/terms_of_reference_of_gst.pdf"
+					target="_blank">Terms of Reference - GST<span class="pdf_icon">(840
+							KB)</span></a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/deptt_offcr/status-gst-05092016.pdf"
+					target="_blank">GST - Concept &amp; Status<span
+						class="pdf_icon">(147 KB)</span></a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/deptt_offcr/reviewng-mandate-dgst.pdf"
+					target="_blank">Reviewing the mandate of DGST<span
+						class="pdf_icon">(557 KB)</span></a></li>
+				<li><a onFocus="hideLastLevel(this)"
+					href="/htdocs-cbec/deptt_offcr/gst-dgtps-12092016.pdf"
+					target="_blank">GST - Presentation<span
+						class="pdf_icon">(393 KB)</span></a></li>
+				<li><a 	href="/htdocs-cbec/deptt_offcr/faq-on-gst.pdf" target="_blank">FAQS ON GST<span class="pdf_icon">(1557 KB)</span></a></li>
+			</ul>
+		</li>
+		-->
+		
+		<li id="navigationSubMenuIT" style="width:14.4%;" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/internationalTravellers">International Travellers</a>
+			<ul id="travellersGuide">
+	
+				<li id="travellersGuideList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/guide_for_travellers/trvler-guide">Guide for Travellers</a></li>
+				<li id="travellersGuideList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/customs/cs-act/formatted-htmls/bgge-rules2016-ason23may2016.pdf" target="_blank">Baggage Rules</a></li>
+				<li id="travellersGuideList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/Atithi/atithi">Athithi@Indian Customs</a></li>
+			</ul>
+		</li>
+
+		<li id="navigationSubMenu" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/tender/tenders-idx">Tenders/Auctions</a>
+		</li>
+		<li id="navigationSubMenu" class="sub" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/news-media">News
+				&amp; Media</a>
+			<ul id="commonUl">
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/press-release/press-release-idx">Press
+						Release</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/mediagst">GST</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/photoGallery">Photo
+						Gallery</a></li>
+				<li id="commonList"><a href="https://www.cbic.gov.in/htdocs-cbec/media">Media</a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/resources/htdocs-cbec/Track01.mp3" target="_blank">Signature Tune of The Indian Customs<span class="audio_icon">(1 MB)</span></a></li>
+				<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/resources/htdocs-cbec/Make_In_India_Week.pdf" target="_blank">Make In India Week<span class="pdf_icon">(8.6
+							MB)</span></a></li>
+			    <li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/resources/htdocs-cbec/e-services.pdf" target="_blank">e-services</a> <span class="pdf_icon">(50 KB)</span></li>
+								
+								<li id="commonList"><a onfocus="hideLastLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/gst/FAQ(II)-Real-estate-sector-1405.pdf" target="_blank">FAQ (Part II) on real estate sector <span class="pdf_icon"></span></a>dated 14th May, 2019</li>
+			</ul></li>
+		<li id="navigationSubMenu" class="" onkeyup="showSecondLevel(event,this)" onmouseover="mouseIn(this)" onmouseout="mouseOut(this)"><a onfocus="hideSecondLevel(this)" href="https://www.cbic.gov.in/htdocs-cbec/contact-us-new/contact-us-new">Contact
+				us</a> <!--<ul>
+				<li><a onFocus="hideLastLevel(this)"
+					onBlur="hideSecondLevel(this)"
+					href="/htdocs-cbec/tel-dir-ason-20Aug15">Telephone
+						Directory</a></li>
+			</ul>--></li>
+	</ul>
+
+</div>
+
+
+
+
+
+<div class="breakingNewSection">
+	<div class="breakingNews">
+		<span class="breakingNews_hd fl_l">News Flash</span>
+			<div id="m1" class="fl_l">
+	
+	
+<script type="text/javascript" src="./Circulars-2012_files/jquery.liMarquee.js.download"></script>
+	
+<!--	
+<style>
+.dialog-ovelay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 999999
+}
+.dialog-ovelay .dialog {
+    width: 400px;
+    margin: 100px auto 0;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 3px;
+    overflow: hidden
+}
+.dialog-ovelay .dialog header {
+    padding: 10px 8px;
+    background-color: #f6f7f9;
+    border-bottom: 1px solid #e5e5e5
+}
+.dialog-ovelay .dialog header h3 {
+    font-size: 14px;
+    margin: 0;
+    color: #555;
+    display: inline-block
+}
+.dialog-ovelay .dialog header .fa-close {
+    float: right;
+    color: #c4c5c7;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding: 0 2px;
+    border-radius: 1px    
+}
+.dialog-ovelay .dialog header .fa-close:hover {
+    color: #b9b9b9
+}
+.dialog-ovelay .dialog header .fa-close:active {
+    box-shadow: 0 0 5px #673AB7;
+    color: #a2a2a2
+}
+.dialog-ovelay .dialog .dialog-msg {
+    padding: 12px 10px
+}
+.dialog-ovelay .dialog .dialog-msg p{
+    margin: 0;
+    font-size: 15px;
+    color: #333
+}
+.dialog-ovelay .dialog footer {
+    border-top: 1px solid #e5e5e5;
+    padding: 8px 10px
+}
+.dialog-ovelay .dialog footer .controls {
+    direction: rtl
+}
+.dialog-ovelay .dialog footer .controls .button {
+    padding: 5px 15px;
+    border-radius: 3px
+}
+.button {
+  cursor: pointer
+}
+.button-default {
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    color: #5D5D5D;
+}
+.button-danger {
+    background-color: #f44336;
+    border: 1px solid #d32f2f;
+    color: #f5f5f5
+}
+.link {
+  padding: 5px 10px;
+  cursor: pointer
+}
+</style>	-->
+	<ul class="tickercontent ticker-mover">
+	
+							<li> Online training on "Fraudulent Duty Drawback in Customs" for Group A officers of CBIC on 25.04.2022 from 10:30 AM To 01:15 PM -reg. <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/training/Nomination%20Proforma%20for%20online%20training%20on%20Fraudulent%20Duty%20Drawback%20in%20Customs.pdf" target="_blank"> Click here </a> </li>		
+	
+							 <li> Online training on 'RTI Act, 2005" for Group A officers of CBIC on 18.04.2022 from 10:30 AM To 01:15 PM <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/training/Nomination%20proforma%20for%20online%20training%20on%20RTI%20Act%202005.pdf" target="_blank"> Click here </a> </li>	
+	
+	                            <li>Consolidated prospective Training Calendar for April-2022 <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/training/consoldated-prospectv-trng-april-2022.pdf" target="_blank"> Click here </a> </li>
+                      
+	                           <li>Procedure for processing notices of Group A IRS(C&amp;IT) officers for voluntary retirement-adhering to prescribed time-frame <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/proc-procssng-notices-grpa-irs-ofcrs-vlntry-retirmnt.pdf" target="_blank"> Click here </a> </li>
+                      
+	                          <li>Direct Recruitment Quota Vacancies for the post of MTS &amp; Havaldar under CBIC for the vacancy Year 2021 <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/vacancy-circulars/vacancy-circ-post-mts-havaldar-2021.pdf" target="_blank"> Click here </a> </li>
+	                          <li> Tentative Annual Training Calendar for the F.Y. 2022-23 <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/training/annual-training-calendar-2022-23.pdf" target="_blank"> Click here </a></li>
+
+	                         <li> Filling up of the post of PA cum CA at the COIN Units at London and Brussels <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/vacancy-circulars/vacancy-circular-pa-ca-london-brussel.pdf" target="_blank"> Click here </a></li>
+
+							<li> Writing of APAR in SPARROW for the Officer Trainees of 72nd Batch for the period 01.04.2021 to 31.03.2022 <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/APAR%20letter%2072nd%20Batch_000007.pdf" target="_blank"> Click here </a></li>
+	
+	                         <li>Direct Recruitment Quota Vacancies for the post of MTS &amp; Havaldar under CBIC for the vacancy Year 2021 -Reg.<a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/vacancy-circulars/vacancy-circular-post-mts-havaldar-ssc.pdf" target="_blank"> Click here </a> 
+							|<a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/vacancy-circulars/enclosure-vacancy-circular.pdf" target="_blank"> Enclosure </a>
+                          </li>
+	                        <li>Due to some Technical issue, the CBLR 2022 Exam schedule to be held in the month of March-2022 is postponed for now. As and when the date for the exam is decided it will be intimated. </li>
+	
+	                        <li> Exemption in PET PST for recruitment to the post of Havaldar in CBIC <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/administrative-wing/admn-wing-circ/circular-exmptn-pet-pst-rcrtmnt-post-havaldar-cbic.pdf" target="_blank"> Click here </a></li>
+	
+	                        <li>KIND ATTENTION: CENTRAL EXCISE TAXPAYERS :  31st MARCH 2022 IS THE DUE DATE FOR PAYMENT OF CENTRAL EXCISE DUTY FOR THE MONTH OF MARCH 2022 </li>
+	
+							<li>General Elections to the Legislative Assemblies of Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, 2022 and Bye-election to 99-Majuli AC, Assam-Engagement of Expenditure Observers through online mode for Account Reconciliation Meeting, DEMC Meeting, preparation of DEO’s Scrutiny Reports, uploading of Expenditure Observer Report IV etc. and other modalities of third visit of Expenditure Observers -Regarding <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/electns/Engagement%20of%20Expenditure%20Observers%20through%20online%2024032022.pdf" target="_blank"> Click here </a></li>
+	
+							<li>General Elections to the Legislative Assemblies of Goa, Manipur, Punjab, Uttarakhand, Uttar Pradesh, 2022 and Bye-election to 99-Majuli AC, Assam-Reschedule of Virtual Training on Virtual Account Reconciliation Meeting, DEMC Meeting, preparation of DEO’s Scrutiny Reports for CEOs, DEOs &amp; Eos and FAQs-Regarding <a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/electns/Reschedule%20of%20Virtual%20Training%20on%20Virtual%20Account%2024032022.pdf" target="_blank"> Click here </a></li>
+	
+	                        <li>Standard Operating Procedure (SOP) for Scrutiny of returns for FY 2017-18 and 2018-19 <a href="https://www.cbic.gov.in/htdocs-cbec/gst/instruction-no-022022-gst-dated-22032022.pdf" target="_blank"> Click here </a></li>
+							
+							<li>Nominations for appointment to the post of Assistant Sub Inspector and Head Constable in National Investigation Agency (NIA) on deputation basis-Reg<a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/vacancy-circulars/NIA%20ASI%20HC%20DEPUTATION.pdf" target="_blank"> Click here </a></li>
+							
+							
+	
+							<li>Instruction dated 14.03.2022 issued by CBIC on reducing delays in Litigation Management.<a href="https://www.cbic.gov.in/htdocs-cbec/legalaffairs/Instruction%20dated%2014032022.pdf" target="_blank"> Click here </a>
+							|<a href="https://www.cbic.gov.in/htdocs-cbec/legalaffairs/Enclosure%2014032022.pdf" target="_blank"> Enclosure</a>
+							</li>
+	
+							<li>Seeks to amend Circular No. 31/05/2018-GST, dated 9th February, 2018.<a href="https://www.cbic.gov.in/htdocs-cbec/gst/Circular-169-2022-GST.pdf" target="_blank"> Click here </a></li>
+							
+							<li> Appointment of Common Adjudicating authority for adjudicating the show cause notices issued by DGGI. <a href="https://www.cbic.gov.in/htdocs-cbec/gst/notfctn-02-central-tax-english-2022.pdf" target="_blank"> Click here </a></li>
+							
+	                        <li>Nomination for the post of Inspector in CBI, EO-I on deputation.<a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/vacancy-circulars/cbi-inspector-deputation.pdf" target="_blank"> Click here </a></li>
+															
+							<li>Draft Seniority list of Deputy Commissioners of Customs and Indirect Taxes appointed/promoted against the vacancy years 2007-08 to 2017-18 in respect of officers serving as on 01.01.2021<a href="https://www.cbic.gov.in/htdocs-cbec/deptt_offcr/training/Draft%20Seniority%20list%20of%20Deputy%20Commissioner%20of%20Customs%20and%20Indirect%20Taxes.pdf" target="_blank"> Click here </a></li>
+	
+			
+<!--		
+<li>General Elections to the Legislative Assembly of Punjab, 2022-Deployment of Expenditure Observers -Regarding <a href="/htdocs-cbec/deptt_offcr/electns/General-Legislative-Assembly-Punjab-2022.pdf" target="_blank"> Click here </a></li>
+
+	
+<li>Online training on “Post Clearance Audit and Customs Transfer Pricing” for group 'A' officers of CBIC on 08 & 09.02.2022 -reg. <a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for online training on Post Clearance Audit and Customs Transfer Pricing.pdf" target="_blank"> Click here </a></li>
+							
+	
+<li> 15th Session of the Virtual Customs Orientation Academy (VCOA) from 21" March, 2022 to 24th June, 2022-Reg <a href="/htdocs-cbec/deptt_offcr/misc/misc-deptl" target="_blank"> Click here </a></li>
+
+	<li> General Elections to the Legislative Assembly of Uttar Pradesh, 2022-Relieving of Expenditure Observers in Phase-I-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/General_Elections_ Observers_1901.pdf" target="_blank"> Click here </a></li>
+
+<li> General Elections to the Legislative Assembly of Uttar Pradesh, 2022-Deployment of Expenditure Observers in Phase-I-Regarding. <a href="/htdocs-cbec/deptt_offcr/electns/General_Elections_-Deployment.pdf" target="_blank"> Click here </a></li>
+
+		<li> General Elections to the Legislative Assembly of Uttar Pradesh, 2022-Deployment of Expenditure Observers in Phase-II-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/electn-idx" target="_blank"> Click here </a></li>
+						
+			<li>Notification issued on Notification for  Notification for Departmental Examination for promotion of Tax Assistants to the Grade of Executive Assistants of Central Taxes & Customs to be held in the month of March 2022. It also contains the Schedule, Syllabus and Instructions for Examination along with the format (in Annexure II) for requesting for Question Papers<a href="/htdocs-cbec/deptt_offcr/Notification for TA to EA March 2022.pdf" target="_blank"> Click here </a></li>
+						
+			<li>General Elections to the Legislative Assembly of Uttarakhand, 2022-Deployment of 05 Expenditure Observers-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/Deployment of 05 Expenditure Observers.pdf" target="_blank"> Click here </a></li>
+
+<li>General Elections to the Legislative Assembly of Uttarakhand, 2022-Deployment of Expenditure Observers-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/Deployment of 04 Expenditure Observers.pdf" target="_blank"> Click here </a></li>
+
+<li>General Elections to the Legislative Assembly of Punjab, 2022-Deployment of 17 Expenditure Observers-Regarding<a href="/htdocs-cbec/deptt_offcr/electns/Deployment of 17 Expenditure Observers.pdf" target="_blank"> Click here </a></li>
+			
+	
+	<li>DGTS has extended the last date from 13.01.2022 to  28/01/2022 of submission of Bid/ Proposal for “RFP for Selection of Communication Agency for CBICs Taxpayer Outreach Program” Tender ID :- 2021_DREV_662959_1  on E- Procurement Portal, to apply<a href="https://eprocure.gov.in/eprocure/app" target="_blank">Click here </a></li>
+	
+	<li>General Elections to the Legislative Assemblies of Goa, Manipur, Punjab, Uttar Pradesh and Uttarakhand, 2022-Virtual Briefing Meeting of Central Observers on 14.01.2022-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/election_1_120122.pdf" target="_blank"> Click here </a></li>
+
+	
+	<li> General Elections to the Legislative Assembly of Uttar Pradesh, 2022-Deployment of Expenditure Observers in Phase-I-Regarding
+ <a href="/htdocs-cbec/deptt_offcr/electns/election_2_120122.pdf" target="_blank"> Click here </a></li>
+	
+	<li>General Elections to the Legislative Assemblies of Goa, Manipur, Punjab, Uttar Pradesh and Uttarakhand, 2022-Briefing Meeting of Observers on 14.01.2022-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/election_3_120122.pdf" target="_blank"> Click here </a></li>
+
+	<li> General Elections to the Legislative Assemblies of Goa, Manipur, Punjab, Uttar Pradesh and Uttarakhand, 2022-Briefing Meeting of Observers on 14.01.2022-Regarding <a href="/htdocs-cbec/deptt_offcr/electns/election_4_120122.pdf" target="_blank"> Click here </a></li>
+
+	
+	
+	
+<li> The stakeholders are hereby informed that, since 16.01.2022, the new toll-free number for ECCS helpdesk shall be 1800-2666-882 </li>
+		<li> OM dated 10.01.2022 regarding corrections in the integrated All India Seniority List (AISL) of Superintendents of Central Excise for the period 01.01.1998 to 31.12.2006 <a href="/htdocs-cbec/deptt_offcr/OM dt. 10.01.2022.pdf" target="_blank"> Click here </a></li>
+		
+	<li>Departmental Examination for Confirmation of Appraisers/ Examiners and Preventive Officers from 02.02.2022 to 04.02.2022-reg.<a href="/htdocs-cbec/deptt_offcr/Final Letter for requistion of papers.pdf" target="_blank">Click here </a>   || <a href="/htdocs-cbec/deptt_offcr/Annexure I.pdf" target="_blank">Annexure I</a> || <a href="/htdocs-cbec/deptt_offcr/Annexure-II.pdf" target="_blank">Annexure II</a> || <a href="/htdocs-cbec/deptt_offcr/Annexure-III.pdf" target="_blank">Annexure III</a></li>
+	
+		<li>  Guidelines for recovery under section 79 for cases covered under explanation to Section75(12) of the CGST Act, 2017 <a href="/htdocs-cbec/gst/Guidelines for recovery under section 79 for cases covered under explanation to section 75(12) of the CGST Act, 2017.pdf" target="_blank"> Click here </a></li>
+		
+	<li>  Preventive measures to contain the spread of Novel Coronavirus (Covid-19)- Attendance of Central Government officials- regarding. <a href="/htdocs-cbec/deptt_offcr/Covid 19 Guidelines on Attendance.pdf" target="_blank"> Click here </a></li>
+	
+	
+<li>Seeking application for vacancies in the grade of Pr. Additional Director General/Additional Director General/Additional Director/Joint Director/ Deputy Director/Assistant Director in DG Systems & Data Management– reg <a href="/htdocs-cbec/deptt_offcr/vacancy-circulars/Group A Circular 04.01.2022.pdf" target="_blank"> Click here </a></li>
+
+	
+	<li>Inviting nomination for the post of Constable in NIA on deputation-Reg.<a href="/htdocs-cbec/deptt_offcr/vacancy-circulars/DEPUTATION NIA CONSTABLE REQUISTION.pdf" target="_blank"> Click here </a></li>
+	
+<li>The Customs Tariff w.e.f. 01.01.2022.<a href="https://www.cbic.gov.in/htdocs-cbec/customs/cst2022-010122/cst-idx" target="_blank">Click here </a></li>
+	
+	
+
+<li>Press Release on decisions of 46th GST Council. <a href="/htdocs-cbec/press-release/46th GST Council Press Release final.pdf" target="_blank"> Click here </a></li>
+
+<li>Online training on "Single Window" for Group 'A' officers of CBIC on 25.01.2022 -reg. <a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for Single Window.pdf" target="_blank"> Click here </a></li>
+<li>Guidelines for Management and Administration of Consumer Welfare Fund provided to Board under rule 97(7A) of the CGST Rules, 2017.<a href="/htdocs-cbec/gst/Guidelines for CWF provided to Board under rule 97(7A) of CGST Rules, 2017.pdf" target="_blank">Click here </a></li>
+
+<li>Notification issued to make Tenth Amendment (2021) to CGST Rule.<a href="/htdocs-cbec/gst/notfctn-40-central-tax-english-2021.pdf" target="_blank">Click here </a></li>
+
+<li>Online training on “Prevention of Money Laundering Act (PMLA)” for Group 'A' officers of CBIC on 21.01.2022 -reg.<a href="/htdocs-cbec/deptt_offcr/Nomination_proforma.pdf" target="_blank">Click here </a></li>
+
+
+<li>Annual General Transfer 2022<a href="http://dghrdcbic.gov.in/agt/" target="_blank">Click here</a> </li>
+
+<li>DGTS is organizing a Pre-Bid Conference on 29.12.2021 at 3 PM. at C.R Building , ITO , New Delhi for selection of communication Agency for CBIC's Taxpayer Outreach Program, Tender ID-2021_DREV_662959_1 . Intersted agencies are requested to participate and submit participant's details at dgts-cbic@gov.in <a href="/htdocs-cbec/deptt_offcr/001.pdf" target="_blank">Click here </a></li>
+
+<!--
+<li>DGTS is organizing a Pre-Bid Conference on 29.12.2021 at 3 PM. at C.R Building , ITO , New Delhi for selection of communication Agency for CBIC's Taxpayer Outreach Program, Tender ID-2021_DREV_662959_1 . Intersted agencies are requested to participate and submit participant's details at dgts-cbic@gov.in </li>
+
+<li>Online training on “Free Trade Agreements, possible misuse and redressal mechanism” for Group 'A' officers of CBIC on 18th Jan, 2022 -reg..<a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for Free Trade Agreements, possible misuse and redressal mechanism.pdf" target="_blank">Click here </a></li>
+
+
+
+<li>World Customs Organization(WCO)-Japan Career Development Programme 2022-2023.<a href="https://www.cbic.gov.in/CurrentCircularIdxController" target="_blank">Click here </a></li>
+
+
+<li>Notification for Departmental Examination for promotion of Ministerial Officers to the Grade of Inspectors of Central Taxes, Inspectors of Customs (Preventive Officers) & Inspectors of Customs (Examiners) to be held in the month of February, 2022.It also contains the Schedule, Syllabus and Instructions for Examination along with the format (in Annexure II) for requesting for Question Papers.<a href="/htdocs-cbec/deptt_offcr/department_promotion_2712.pdf" target="_blank">Click here </a></li>
+
+<li>Prospective trainings for the month of January 2022<a href="/htdocs-cbec/deptt_offcr/training/trainings_2712.pdf" target="_blank">Click here </a></li>
+					
+<li>Filling up of the post of Preventive Officer, Customs in KASEZ-Reg.<a href="/htdocs-cbec/deptt_offcr/vacancy-circulars/KASEZ PREVENTIVE OFFICER DEPUTATION RECRUITMENT.pdf" target="_blank">Click here </a></li>
+
+
+<li>Online training on "Advance Ruling" for Group 'A' officers of CBIC on 11.01.2022 - reg.<a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for Advance Ruling.pdf" target="_blank">Click here </a></li>
+
+<li>Draft Seniority list of Assistant Commissioners of Customs & Indirect Taxes {Group 'A' of IRS (C&IT)} appointed/promoted against the vacancy year 2002-03 to 2012-13 in respect of officers serving as on 01.01.2021 - reg.<a href="/htdocs-cbec/deptt_offcr/Forwarding letter 20 Dec 2021.pdf" target="_blank">Click here </a> || <a href="/htdocs-cbec/deptt_offcr/Draft AC Seniority list dated 20 December 2021.pdf" target="_blank">Draft Seniority List</a></li>
+
+<li>CBIC is inviting applications/bids, through “Request for Proposal (RFP) for selection of Communication Agency for CBIC’s Taxpayer Outreach programs”. Interested agencies may apply online through e-procurement portal. For more details, please <a href="https://eprocure.gov.in/eprocure/app" target="_blank">Click here</a></li>
+
+<li>No Objection Certificate for filling up Direct Recruitment Vacancies in the grade of MTS under CBIC for the vacancy Year 2020.<a href="/htdocs-cbec/deptt_offcr/vacancy-circulars/MTS 2020 NOC to CCAs.pdf" target="_blank">Click here </a></li>
+
+<li>Registration and Requisition Letter issued for Next Dept. Exam. of Inspectors to be held from 08.02.2022 to 11.02.2022.<a href="/htdocs-cbec/deptt_offcr/Holding_1612.pdf" target="_blank">Click here </a>   || <a href="/htdocs-cbec/deptt_offcr/Holding_Annexure.xls" target="_blank">Annexure </a></li>
+
+<li>Instruction regarding data collection on pending compassionate appointment - reg.<a href="/htdocs-cbec/deptt_offcr/circ_1512.pdf" target="_blank">Click here </a></li>
+
+<li>Deputation in respect of Group “B”(non-gazetted) Group“C” employees under CBIC-Reg.<a href="/htdocs-cbec/deptt_offcr/administrative-wing/admn-wing-circ/DGHRD08.pdf" target="_blank">Click here </a></li>
+	
+			
+<li>Violation of Central Civil Services (Conduct Rules), 1964—Reg<a href="/htdocs-cbec/deptt_offcr/administrative-wing/admn-wing-circ/Board Letter CCS Conduct Rules.pdf" target="_blank">Click here </a></li>						
+								
+<li>Seminar on “Collection, Analysis and Handling of Intelligence and Evidences  in Digital World”  to be conducted on 06th & 07th January, 2022 at NACIN, Mumbai<a href="/htdocs-cbec/deptt_offcr/training/Letter-CC Commr calling for Nominations on 06 and 07 Jan 22.pdf" target="_blank">Click here </a> || <a href="/htdocs-cbec/deptt_offcr/training/Schedule of Training 6 .pdf" target="_blank">Schedule of Training </a></li>
+-->
+		
+<!--					
+	<li>Online training on “Frauds in GST” for Group 'A' officers of CBIC on 30.12.2021- reg.<a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for online training on 30122021 on Frauds in GST.pdf" target="_blank">Click here </a></li>
+	
+<li>Tax Information Portal launched for enhanced view of all Indirect Tax Acts, Rules, Regulations and Forms.<a href="https://taxinformation.cbic.gov.in" target="_blank">Click here </a></li>	
+-->
+<!--
+<li>  Online training on "Implementation of Section 28DA of the Customs Act, 1962 and CAROTAR, 2020 in respect of Rules of Origin under Trade Agreements (FTA/PTA/CECA/CEPA) and Verification of Certificates of Origin”-reg.<a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for Implementation of Sec 28DA of the Customs Act, 1962.pdf" target="_blank">Click here</a> </li>	
+
+
+	<li>Online training for IOs/POs & Departmental Officers. -reg.<a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for IOsPOs.pdf" target="_blank">Click here</a> </li>
+
+<li>Online training on "Disposal of Goods (confiscated & seized)" -reg. <a href="/htdocs-cbec/deptt_offcr/training/Nomination proforma for disposal of Goods.pdf" target="_blank">Click here</a> </li>	
+
+		
+
+<li>Notification issued to make Ninth Amendment (2021) to CGST Rules. <a href="/htdocs-cbec/gst/notfctn-37-central-tax-hindi-2021.pdf" target="_blank">Click here</a> </li>
+
+-->
+<!--
+<li>Online training on Prevention of Commercial Frauds and Money Laundering.<a href="/htdocs-cbec/deptt_offcr/training/Commercial_Frauds_and_Money_Laundering.pdf" target="_blank">Click here</a> </li>
+	
+
+		
+
+
+	<li>One day online training programme on capacity building on issues related to NCLT, dated 24.11.2021, to be organised by IBBI<a href="/htdocs-cbec/deptt_offcr/training/One day-IBBI.pdf" target="_blank">Click here</a> </li>
+		
+<li>Circular on Clarification on refund related issues <a
+				href="/htdocs-cbec/gst/Circular-166-22-2021-GST.pdf"
+				target="_blank">Click here</a> </li>
+				
+				
+-->
+
+	
+
+
+
+				
+
+
+</ul> 
+
+		</div>
+		
+		<a class="viewAll_hd fl_r" style="background-color:#3666A6; color:white;font-size: 11.5px;" href="https://www.cbic.gov.in/htdocs-cbec/home_links/tickers" onclick="stop()">View All</a>
+	</div>
+</div>
+
+
+
+</div>
+<div class="content">
+<table>
+	<tbody><tr>
+		<td class="leftpanel">
+		
+<!--<script type="text/javascript" src="/resources/js/jquery.min"></script>-->
+
+<div class="leftmenu">
+	<div class="accordian">
+
+<!-- <div class="accordian-section first "
+			onKeyUp="showSecondLevelfoc(event,this)"
+			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)">
+			<a class="accordian-section-title " href="#accordian-1"
+				onfocus="hideSecondLevel_foc(this)">Chairman's Desk</a><span class="newchair"></span>
+			<div id="accordian-1" class="accordian-section-content">
+				<ul>
+					<li><a href="/htdocs-cbec/chairman-newsletters/newsltr-07apr2017.pdf" target="_blank">Weekly newsletter from Chairman, CBEC to all officers and staff of CBEC</a></li>
+					
+					<li><a href="/htdocs-cbec/chairman-newsletters/DO-letter-of-member-customs-03-04-2017.pdf" target="_blank">Weekly newsletter from Chairman, CBEC to all officers and staff of CBEC dated 03/04/2017</a></li>
+					
+				</ul>
+				<a class="more"
+					href="/htdocs-cbec/home_links/chairman-desk">View
+					All</a>
+			</div>
+			
+	</div> -->
+		<!--end .accordian-section-->
+		
+		
+		
+		<div class="accordian-section first" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			
+			<a class="accordian-section-title" href="https://www.cbic.gov.in/htdocs-cbec/home_links/chairman-desk" onfocus="hideSecondLevel_foc(this)"> Chairman's Desk </a>
+<!-- 				<div id="accordian-1" class="accordian-section-content"> -->
+<!-- 				<ul> -->
+
+<!-- 					 <li><a -->
+
+<!-- 							</a></li>	 -->
+<!-- 					<li><a -->
+
+<!-- 				</ul> -->
+<!-- 				</div> -->
+
+		</div>
+	
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title " href="https://www.cbic.gov.in/htdocs-cbec/home_links/tax_payer_assistance" onfocus="hideSecondLevel_foc(this)">Taxpayer Assistance</a>
+<!-- 			<div id="accordian-2" class="accordian-section-content"> -->
+
+<!-- 				<ul> -->
+
+<!-- 					<li><a
+<!-- 						href="/htdocs-cbec/enquiry-points">Enquiry points</a></li>REPLCAE WITH NEW JSP PAGE ONCE UTILITY WORKS
+<!-- 					<li><a -->
+
+						
+
+<!-- 											target="_top">Customs Authority for Advance Rulings(CAAR) </a></li> -->
+				
+<!-- 					 <li><a -->
+
+<!-- 							Time</a></li>	 -->
+<!-- 					<li><a -->
+
+<!-- 							of Collection</a></li> -->
+
+<!-- 					<li><a -->
+
+<!-- 							Budget</a></li> -->
+<!-- 					<li><a -->
+<!-- 						href="http://pib.nic.in/newsite/mbErel.aspx?relid=137342" -->
+<!-- 						target="_blank">Clarifications on levy imposed on jewellery<span -->
+<!-- 							class="icon_external"></span></a></li> -->
+
+<!-- 					<li><a -->
+
+<!-- 							Information</a></li> -->
+<!-- 					<li><a -->
+
+<!-- 							Grievances</a></li> -->
+<!-- <!-- 					<li><a --> 
+ 
+					
+<!-- 					
+<!-- 					<li><a -->
+<!-- 						href="/htdocs-cbec/it-ombud/ombudsman-idx">Ombudsman</a></li> -->
+<!-- 						--> 
+						
+<!-- 					<li><a -->
+
+<!-- 							Services</a></li> -->
+
+
+<!-- <!-- 					<li><a --> 
+ 
+<!-- <!-- 							for Travellers</a></li> --> 
+<!-- 					<li><a -->
+
+<!-- 							Info</a></li> -->
+<!-- 					<li><a -->
+
+<!-- 					<li><a -->
+
+<!-- 					<li><a -->
+
+
+
+<!-- 				</ul> -->
+<!-- 				<a class="more" -->
+
+<!-- 					All</a> -->
+
+<!-- 			</div> -->
+			<!--end .accordian-section-content-->
+		</div>
+		<!--end .accordian-section-->
+
+		
+		
+			<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://cbic-gst.gov.in/" target="_blank" onfocus="hideSecondLevel_foc(this)">ACES-GST</a>
+	
+		</div>
+		
+		
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="http://www.icegate.gov.in/" target="_blank" onfocus="hideSecondLevel_foc(this)">ICEGATE</a>
+		</div>
+		
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://courier.cbic.gov.in/" target="_blank" onfocus="hideSecondLevel_foc(this)">ECCS</a>
+
+		</div>
+
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://www.gst.gov.in/" target="_blank" onfocus="hideSecondLevel_foc(this)">GST Common Portal</a>
+			
+		</div>
+		
+		
+
+	<!--  	<div class="accordian-section "
+			onKeyUp="showSecondLevelfoc(event,this)"
+			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)"> 
+			<a class="accordian-section-title" href="#accordian-4"
+				onfocus="hideSecondLevel_foc(this)">Swachhata Action Plan</a>
+			<div id="accordian-4" class="accordian-section-content">
+				<ul>
+					
+					
+					<li>  <a href="http://www.dghrdcbic.gov.in/WriteReadData/121202035633PM_0_Swachhta%20Uday%202nd%20Editions.pdf"  target="_blank">Swachhta Uday Booklet 2nd Edition
+							 </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gacblink"></span> </li>
+					
+					
+					<li>  <a href="http://www.dghrdcbic.gov.in/WriteReadData/_0_Excise_Swachata%20book_New.pdf"  target="_blank">Swachhta Uday Booklet 
+							 </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="gacblink"></span> </li>
+					
+					
+					
+					<li><a href="/htdocs-cbec/swachhata-actionplan/FAQ_on_Swachchta_final.pdf">Frequently asked questions (FAQ) related to Swachhta Action Plan</a></li>
+					
+					<li><a href="/htdocs-cbec/swachhata-actionplan/swachhata-actionplan-circins">Circulars/Instructions</a></li>
+					
+					<li><a href="/htdocs-cbec/swachhata-actionplan/field-formtn-posts">Posts  by Field Formations</a></li>
+				
+					<li><a href="/htdocs-cbec/swachhata-actionplan/swachhata-actionplan-relatedlinks">Related Links</a></li>
+				</ul>
+
+				<a class="more" href="/htdocs-cbec/home_links/swachhata-actionplan">View All</a> 
+
+			</div>
+			<!--end .accordian-section-content-->
+		<!-- </div>
+		<!--end .accordian-section-->
+		
+		
+		
+		<!--start .accordian-section-->
+		<!--  <div class="accordian-section"
+			onKeyUp="showSecondLevelfoc(event,this)"
+			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="#accordian-vig"
+				onfocus="hideSecondLevel_foc(this)">Vigilance Awareness</a>
+			<div id="accordian-vig" class="accordian-section-content">
+			<ul>
+			
+			<li><a href="/htdocs-cbec/vigilance/vigliance-administration-handbook.pdf" target="_blank">Vigliance Administration Handbook</a>
+			</li>
+			
+			<li><a href="/htdocs-cbec/vigilance_awarness/vigilance-awareness">Posts  by Field Formations</a>
+			</li>
+			
+			<!--<li><a href="/htdocs-cbec/vigilance_awarness/vigilance-awareness-gallery-poster">Posters</a>
+			</li>	-->
+			
+			<!-- </ul>
+			
+		</div> 
+		<!--end .accordian-section-->
+		<!-- </div>
+		<!--start .accordian-section-->
+		
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://www.cbic.gov.in/htdocs-cbec/home_links/india-aeo-prgm" onfocus="hideSecondLevel_foc(this)">Indian AEO Programme</a>
+
+		</div>  
+		<!--end .accordian-section-->
+		
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://www.cbic.gov.in/htdocs-cbec/home_links/public_info" onfocus="hideSecondLevel_foc(this)">Public Information</a>
+
+		</div> 
+		
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://www.cbic.gov.in/htdocs-cbec/home_links/stakeholder_consultation" onfocus="hideSecondLevel_foc(this)">Stakeholder Consultation</a>
+
+		</div>
+		
+
+
+
+<!-- 		<div class="accordian-section " -->
+<!-- 			onKeyUp="showSecondLevelfoc(event,this)" -->
+<!-- 			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)"> -->
+
+<!-- 				onfocus="hideSecondLevel_foc(this)">Public Information<br>/Stakeholder Consultation</a> -->
+<!-- 			<div id="accordian-5" class="accordian-section-content extended"> -->
+<!-- 				<ul> -->
+				
+
+							
+				
+												
+<!-- 				<li><a -->
+
+							
+<!-- 			<!--	<li><a href="/htdocs-cbec/Annual_Sectorate_Review_Letter_dt_06102017_from_DGVIG.pdf" target="_blank">Nodal Officer for the Whistle Blower Purpose.</a></li>--> 
+					
+
+				
+<!-- 				
+				
+<!-- 				<li><a -->
+<!-- 						href="/htdocs-cbec/refund-rebate/refund_claims">Refund/Rebate -->
+<!-- 							Claims (Cus, C.Ex & ST) </a></li> -->
+							
+<!-- 				<li><a href="/htdocs-cbec/cblr-examinations">CBLR Examinations</a></li> -->
+				
+				
+<!-- 				<li><a href="/htdocs-cbec/home_links/drawback-comte">Drawback Committee</a></li> -->
+				
+				
+				
+<!-- 				<li><a href="/htdocs-cbec/home_links/india-aeo-prgm">Indian AEO programme</a></li> -->
+				
+				
+<!-- 				
+<!-- 				<li><a href="/htdocs-cbec/articles-jewellery">Articles of Jewellery</a></li> -->
+				
+<!-- 				<li><a href="https://www.icegate.gov.in/jsp/DailyReport.jsp" -->
+<!-- 						target="_blank">Daily Revenue/Drawback Reports <span -->
+<!-- 							class="icon_external"> </span></a></li> -->
+				
+<!-- 				<li><a -->
+<!-- 						href="/htdocs-cbec/defaulters-new/defaulter-idx">Defaulters -->
+<!-- 							of Central Excise & Customs</a></li> -->
+				
+<!-- 				<li><a -->
+<!-- 						href="/htdocs-cbec/it-consolidation">CBIC's -->
+<!-- 							IT consolidation Programme</a></li> -->
+				
+<!-- 				<li><a href="https://www.icegate.gov.in/utility/" -->
+<!-- 						target="_blank">Data Integrator v 1.0 (Non-EDI Trade Data -->
+<!-- 							Capture Utility) <span class="icon_external"> </span> -->
+<!-- 					</a></li> -->
+				
+				
+				
+<!-- 				<li><a -->
+<!-- 						href="/htdocs-cbec/dbk-idx">Duty -->
+<!-- 							Drawback</a></li> -->
+					
+<!-- 				<li><a -->
+<!-- 								href="/htdocs-cbec/home_links/budget-support-scheme">Budgetary Support Scheme to the States of Jammu & Kashmir, Uttrakhand, Himachal Pradesh and North East including Sikkim</a></li> -->
+					
+<!-- 				<li><a -->
+<!-- 						href="/htdocs-cbec/misc">Miscellaneous</a></li> -->
+				
+				
+<!-- 				<li><a -->
+<!-- 						href="/htdocs-cbec/home_links/nodalofcWB">Nodal Officers for Whistle Blower</a></li> -->
+				
+<!-- 				--> 
+				
+<!-- 				<li><a href="/htdocs-cbec/Annual_Sectorate_Review_Letter_dt_06102017_from_DGVIG.pdf" target="_blank">Nodal Officer for the Whistle Blower Purpose.</a></li> -->
+				
+				
+<!-- 				</ul> -->
+					
+																
+				
+					
+				
+				
+				
+
+<!-- 		<!--		<li>Notice for Customs Brokers examination &nbsp;&nbsp;[<a -->
+<!-- 						href="/htdocs-cbec/cs-brokers-exam-e.pdf" -->
+<!-- 						target="_blank">Eng.<span class="pdf_icon"></span></a>]&nbsp;&nbsp;|&nbsp;&nbsp; -->
+<!-- 						<a -->
+<!-- 						href="/htdocs-cbec/cs-brokers-exam-h.pdf" -->
+<!-- 						target="_blank"><span class="icon_hindi"> </span><span -->
+<!-- 							class="pdf_icon"> </span></a></li>								 -->
+
+					
+
+					
+
+					
+					
+<!-- 					 <li><a href="http://dgicce.nic.in/dgicceAEO.htm" -->
+<!-- 						target="_blank">Indian AEO Programme <span -->
+<!-- 							class="icon_external"></span></a></li>  -->
+
+					
+
+					
+
+					
+
+					
+
+<!-- 					<li><a -->
+<!-- 						href="/htdocs-cbec/accredited-client-programme">Accredited -->
+<!-- 							Clients Programme</a></li>  -->
+
+					
+
+					
+
+<!-- 				<a class="more" -->
+
+<!-- 					All</a> -->
+
+<!-- 			</div> -->
+			<!--end .accordian-section-content-->
+<!-- 		</div> -->
+		<!--end .accordian-section-->
+
+		<div class="accordian-section " onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://esanchar.cbic.gov.in/DIN/DINSearch" target="_blank" onfocus="hideSecondLevel_foc(this)">
+			<span class="gacblink"></span>
+			Verify CBIC-DIN</a>
+			<!--	
+			<div id="accordian-6" class="accordian-section-content">
+
+				<ul>
+					<li><a
+						href="/htdocs-cbec/draft-circ/draft-circular">Suggestions/Comments for draft matters</a></li>
+				</ul>
+				<a class="more"
+					href="/htdocs-cbec/home_links/stakeholder_consultation">View
+					All</a>
+
+			</div>
+			-->
+			<!--end .accordian-section-content-->
+		</div>
+	<!--
+		<div class="accordian-section "
+			onKeyUp="showSecondLevelfoc(event,this)"
+			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="#accordian-5"
+				onfocus="hideSecondLevel_foc(this)">Related Sites</a>
+			<div id="accordian-5" class="accordian-section-content">
+
+				<ul>
+					<li><a
+						href="/htdocs-cbec/deptt-othersites">Under
+							CBEC</a></li>
+					<li><a
+						href="/htdocs-cbec/othersites">Others</a></li>
+					<li><a
+						href="/htdocs-cbec/intl-airpts-cs-fb">Facebook Pages of Major International Airports</a></li>
+				</ul>
+				<a class="more"
+					href="/htdocs-cbec/home_links/related_sites">View
+					All</a>
+
+			</div>
+			<!--end .accordian-section-content-->
+		<!--</div>-->
+		<!--end .accordian-section-->
+	
+
+		<!-- <div class="accordian-section"
+			onKeyUp="showSecondLevelfoc(event,this)"
+			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)">
+			<a class="accordian-section-title"
+				href="/htdocs-cbec/legalaffairs/dla_idx"
+				onfocus="hideSecondLevel_foc(this)">Legal Affairs</a>
+
+		</div>
+		<!--end .accordian-section-->
+
+
+		<!--  <div class="accordian-section last"
+			onKeyUp="showSecondLevelfoc(event,this)"
+			onmouseover="mouseInfoc(this)" onMouseOut="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="#accordian-7"
+				onfocus="hideSecondLevel_foc(this)">CAAR/ D.G. Audit</a>
+			<div id="accordian-7" class="accordian-section-content">
+
+				<ul>
+				<!-- <li><a
+						href="/htdocs-cbec/aar/aar"
+						target="_top">Authority for Advance Rulings</a></li>
+						-->
+					<!--  <li><a onBlur="hideSecondLevel_foc(this)"
+						href="/htdocs-cbec/dgauditman/dg-auditmanuals-idx">D.G.
+							Audit</a></li>
+							
+							<li><a href="/htdocs-cbec/aar/newaar"
+											target="_top">Customs Authority for Advance Rulings </a></li>
+				</ul>
+				<a class="more"
+					href="/htdocs-cbec/legalaffairs_aar_dgaudit_idx">View
+					All</a>
+
+			</div>
+			<!--end .accordian-section-content-->
+		<!-- </div>
+		
+		<!--end .accordian-section-->
+		
+		<div class="accordian-section" onkeyup="showSecondLevelfoc(event,this)" onmouseover="mouseInfoc(this)" onmouseout="mouseOutfoc(this)">
+			<a class="accordian-section-title" href="https://www.cbic.gov.in/htdocs-cbec/home_links/dept_officers" onfocus="hideSecondLevel_foc(this)">Departmental Officers</a>
+<!-- 			<div id="accordian-3" class="accordian-section-content extended"> -->
+<!-- 				<ul> -->
+				
+
+				
+
+				
+<!-- 				<li><a href="https://dghrdcbic.gov.in/ttdetails.asp?tid=45&stid=89">DGHRD</a></li> -->
+																
+<!-- 				<li><a -->
+
+<!-- 							letters from Chairman and Members</a></li> -->
+									
+<!-- 				<li><a -->
+
+								
+<!-- 				<li><a -->
+
+								
+
+<!-- 							Wing</a></li> -->
+							
+
+				
+
+<!-- 									Administrators for CBIC website</a></li> -->
+				
+
+<!-- 									matters</a></li> -->
+				
+<!-- 				<li><a -->
+
+<!-- 							Circulars</a></li> -->
+				
+<!-- 				<li><a -->
+
+
+<!-- 				<li class="expand"><a -->
+
+
+<!-- 				</ul> -->
+<!-- 				<a class="more" -->
+
+<!-- 					All</a> -->
+
+
+<!-- 			</div> -->
+<!-- 			<!--end .accordian-section-content--> 
+<!-- 		</div> -->
+		<!--end .accordian-section-->
+		
+		
+		
+	</div>
+	</div> 
+
+</div>
+
+
+<!--  <div class="quick_links">
+	<h2>Quick Links</h2>
+	<ul>
+
+		<li><a
+			href="/Exchange-Rate-Notifications">Exchange
+				Rate Notifications</a></li>
+		<li><a
+			href="/Customs-Notifications">Notifications
+				of Customs</a></li>
+		<li><a
+			href="/Excise-Notifications">
+				Notifications of Central Excise</a></li>
+		<li><a
+			href="/ServiceTax-Notifications">Notifications
+				of Service Tax</a></li>
+
+	</ul>
+</div> --></td>
+		<td class="rightpanel"><div class="breadcrumb"><div class="fl_l">You are here::</div><ul><li><a href="https://www.cbic.gov.in/index">Home</a></li><li><a href="https://www.cbic.gov.in/htdocs-cbec/customs">Customs</a></li><li><a href="https://www.cbic.gov.in/Customs-Circulars-Instructions">Circulars/ Instructions</a></li><li>Circulars-2012</li></ul></div><a name="maincontent"></a>		
+		
+
+
+
+<div class="Section1">
+
+<p><strong>Circular
+No. 16 /2012-Customs</strong></p>
+
+<p>F. No.450/79/2010-Cus.IV</p>
+
+<p class="alg-center">Government
+of India</p>
+
+<p class="alg-center">Ministry
+of Finance</p>
+
+<p class="alg-center">Department
+of Revenue</p>
+
+<p class="alg-center">Central
+Board of Excise and Customs</p>
+
+<p class="alg-center">*****</p>
+
+<p class="alg-right">Room No.229
+A, North Block</p>
+
+<p class="alg-right">New Delhi,
+dated 13<sup>th</sup> June, 2012</p>
+
+<p>To,</p>
+
+<p>All Chief Commissioners of Customs / Customs (Prev.). </p>
+
+<p>All Chief Commissioners of Customs &amp; Central Excise.</p>
+
+<p>All
+Director Generals / Chief Departmental Representatives (CESTAT),</p>
+
+<p>All Commissioners of Customs / Customs (Prev.).&nbsp; </p>
+
+<p>All Commissioners of Customs (Appeals).&nbsp; </p>
+
+<p>All Commissioners of Customs &amp; Central Excise.</p>
+
+<p>All Commissioners of Customs &amp; Central Excise (Appeals).</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+
+<p>Sir / Madam,</p>
+
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p>
+
+<p></p>
+
+<p class="alg-center"><strong>Subject: Procedure
+followed for import of Indian vessels and filing of Import General Manifest, Bill
+of Entry - regarding.</strong></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p class="Style19">&nbsp;</p>
+
+<p class="Style19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I am directed to invite your
+attention to the Board's instruction issued
+vide F.No.450/79/2010-Cus.IV dated 23.09.2010 which state that the
+requirement for filing Import General Manifest (IGM) and Bill of Entry should
+be complied with even in cases, where goods are exempt from payment
+of any duty.&nbsp; The jurisdictional
+Commissioners were also instructed to review the situation, and take
+appropriate action for past cases, including adjudication, if warranted, in
+case of non-fulfillment of aforesaid filing of documents. &nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  In this regard, certain difficulties
+have been brought to the notice of the Board by the trade and Indian Ship Owners'
+Association stating that the Customs field formations are insisting on filing
+of IGM and Bill of Entry even in respect of those vessels that were imported in
+the past and which were exempt from payment of import duty.</p>
+
+<p>&nbsp;</p>
+
+<p>3.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this regard, it is stated that as the
+provisions of Section 29 of the Customs Act, 1962 read with Section 2 (22) and 2(25),
+the term 'imported goods', <i>interalia</i>, includes vessels entering India from any place
+outside the country (India). These vessels may fall into any of the following
+category (i) Foreign flag vessels i.e., vessels that
+have been registered outside India and which carry imported/ exported goods or
+passengers, during its foreign run (voyage from a port outside India to an
+Indian port, whether touching any intermediate port in India or not); (ii)
+Vessel entering India for the first time on arrival in the country, for
+registration as Indian Flag vessel; (iii) Vessels which are intended for
+conversion from foreign run to coastal run/ trade (voyage between two or more
+Indian ports); and (iv) Vessels which are brought into India for breaking up.</p>
+
+<p>&nbsp;</p>
+
+<p>3.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Foreign flag vessels:
+These are the vessels that are registered abroad and its entry into the country
+is for carrying cargo or passengers, as a conveyance. Hence, there is no
+requirement for filing an IGM, Bill of Entry for foreign flag vessel which is
+being used as conveyance. However, the requirement for filing an import
+manifest in the prescribed manner for the goods or passengers which are being
+carried in the vessel, on its entry into an Indian port in terms of the
+provisions under Section 30 of the Customs Act needs to be complied with.</p>
+
+<p>&nbsp;</p>
+
+<p>3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indian Flag Vessel:
+In terms of the provisions of Part-V of the Merchant Shipping Act, 1958,
+vessels entering into India for the first time, are required to be registered
+with specified authority of the Mercantile Marine Department as Indian ship,
+which can then display the national character of the ship as Indian Flag Vessel
+for the purpose of Customs and other purposes specified in the said Act. Such
+Indian ship or vessel may be used for foreign run or exclusively for coastal
+run/ trade. Further, any ship or vessel may be taken outside India or chartered
+for coastal trade in India, only after obtaining the requisite licence from the
+Director General of Shipping, under the provisions of Section 406 or 407,
+respectively, of the said Merchant Shipping Act. Hence, in all such cases the
+Customs declarations such as IGM, Bill of Entry is required to be filed with
+jurisdictional Customs authority.</p>
+
+<p>&nbsp;</p>
+
+<p>3.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vessels for conversion
+into coastal run: Any vessel could be used for coastal run/ trade after
+obtaining requisite clearance from Director General of Shipping and on
+fulfilment of certain specified conditions under Section 407 of the Merchant
+Shipping Act, 1958. In case of foreign going vessel, exemption from import
+duties, including CVD, have been extended vide serial No.462 of notification
+No.12/2012-Cus. dated 17.03.2012, subject to
+prescribed conditions, which binds the importer to file fresh Bill of Entry at
+the time of its conversion for coastal run/ trade and payment of applicable
+duty on such conversion of vessel for costal run/ trade. Similarly, excise duty
+is also payable on vessels which are being used for coastal trade vide serial
+No.306 of notification No.12/2012-Cus. dated
+17.03.2012. Hence, if any Indian Flag vessel which is used for time being as
+foreign going vessel is converted for use in coastal trade or any vessel which
+is to be used for coastal trade, there is a need to file a Bill of Entry for
+payment of applicable duty as CVD.</p>
+
+<p>&nbsp;</p>
+
+<p>3.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Vessels for breaking
+up: Vessel and other floating structures intended for breaking up are
+liable to payment of applicable duty. All vessels for the transport of persons
+or goods, falling under heading 8901 (excluding those which are imported for
+breaking up) are fully exempt from payment of import duty under vide serial
+No.461 of notification No.12/2012-Cus. dated
+17.03.2012, subject to the condition that the importer should file fresh Bill
+of Entry at the time of its breaking up of the vessel after its importation.
+Hence, in these cases the importer has to file an IGM and Bill of Entry,
+claiming the exemption as may be applicable, at the time of initial import and
+later file fresh Bill of Entry at the time of breaking up of the vessel as per
+the condition attached to the aforesaid exemption.</p>
+
+<p>&nbsp;</p>
+
+<p>4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In view of the above, it
+is clarified that in respect of foreign flag vessels, for Indian flag vessels, there
+is no requirement of filing of IGM and Bill of Entry, since its usage is as
+conveyance. In respect of Indian flag vessels and vessels for breaking up as
+explained in para 3.3 and 3.5 above, the importer has
+to file IGM and Bill of Entry, under the provisions of the Customs Act, 1962. As
+regards the vessel for conversion into costal run/ trade as detailed in para 3.4, since the changes in the duty structure for levy
+of CVD on vessels which are being converted for coastal trade was initially
+imposed from 1.3.2011, and subsequently retrospective exemption has been
+provided for the period 1.3.2011 to 16.3.2011 vide clause 129 of the Finance
+Act, 2012, the requirement for filing IGM and Bill of Entry may be insisted in
+all such cases w.e.f. 17.03.2012, that is the date from which levy of CVD has
+come into force.</p>
+
+<p class="alg-center">&nbsp;</p>
+
+<p>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; It is also clarified that
+all vessels including foreign going vessels for its entry into / exit from the
+country during its journey as foreign going vessel and the Indian flag vessel /
+Indian Ship for subsequent use as foreign going vessel would not require filing
+of IGM and Bill of Entry as conveyance, since the same are not imported goods
+to be cleared for home consumption.</p>
+
+<p>&nbsp;</p>
+
+<p>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Accordingly, the field
+formations may adjudicate the cases involving any violation where the IGM or Bill of Entry in respect of import of
+vessel were not filed at the time of import, on its first arrival in India or
+on its conversion into coastal trade and appropriate penal action be taken
+against the offenders.</p>
+
+<p>&nbsp;</p>
+
+<p>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The above
+instructions may be brought to the notice of all the concerned immediately
+through appropriate Public Notice.</p>
+
+<p>&nbsp;</p>
+
+<p>8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Receipt of this Circular may be kindly
+acknowledged.</p>
+
+<p class="alg-right">Yours faithfully,</p>
+
+<p class="alg-right">&nbsp;</p>
+
+<p class="alg-right">(G. S. Sinha),</p>
+
+<p class="alg-right">OSD (Customs IV)</p>
+
+<p>Copy to:</p>
+
+<p>Internal
+circulation (as usual).</p>
+
+<p class="alg-center">-x-0-x-</p>
+
+<p>&nbsp;</p>
+
+</div>
+
+
+
+
+		
+		</td>
+	</tr>
+</tbody></table>
+</div>
+<div class="footer">
+
+
+
+<table>
+	<tbody><tr class="ft_top">
+		<td class="wtd650">
+
+<!-- 			<ul> -->
+<!-- 				<li><img -->
+
+<!-- 					style="margin-left: 50px" alt="quicklink"></li> -->
+<!-- 				<li><a -->
+
+<!-- 						Rate Notifications.</a></li> -->
+<!-- 				<li><a -->
+
+<!-- 						of Customs</a></li> -->
+<!-- 				<li><a -->
+
+<!-- 						of Central Excise</a></li> -->
+
+<!-- 			</ul> -->
+		</td>
+		<td class="wtd650">
+
+			<ul>
+				<li><img src="./Circulars-2012_files/sitemap_icon.png" style="margin-left: 10px" alt="sitemap"></li>
+				<li><a onfocus="hideLastlevel(this)" id="21" href="https://www.cbic.gov.in/htdocs-cbec/sitemap">Sitemap</a></li>
+				<li><a onfocus="hideLastlevel(this)" id="22" href="https://www.cbic.gov.in/htdocs-cbec/website-policy">Website
+						Policies</a></li>
+				
+				<!--<li><a onfocus="hideLastlevel(this)" id="23"
+					href="http://www.dor.gov.in/scgst" target="_blank">Feedback</a></li>-->
+				
+				<!-- <li><a onfocus="hideLastlevel(this)" id="23"
+					href="/issue">Issues/Queries</a></li> -->
+			</ul>
+		</td>
+
+		<!--<td class="wtd180" >
+					
+					<ul>
+					<li><img src="/resources/css/cupertino/images/help_icon.png" alt="help"></li>
+				 	<li><a href="#">FAQs</a></li> 
+					<li><a href="/htdocs-cbec/helpmail">Help</a></li>
+					</ul>
+			
+			</td>-->
+		<td class="wtd650">
+			<ul>
+				<li><img src="./Circulars-2012_files/help_icon.png" alt="help"></li>
+				<!-- 	<li><a href="#">FAQs</a></li> -->
+				<li><a href="https://www.cbic.gov.in/htdocs-cbec/helpmail">Help</a></li>
+			</ul> <br>
+			<!-- <p style="margin-left:15px">Follow Us 
+		
+		
+		<a href="https://www.facebook.com/pages/CBEC-Central-Board-of-Excise-and-Customs/109132989432740" target="_blank" title="Facebook(External website that opens in a new window)">
+		<img src="/resources/css/cupertino/images/facebook_icon.png" style="margin-left:10px" alt="link to "></a>
+		<a href="https://twitter.com/cbic_india" target="_blank" title="Twitter(External website that opens in a new window)">
+		<img src="/resources/css/cupertino/images/twitter_icon.png" style="margin-left:10px" alt="link to twitter"></a>
+		<a href="https://www.youtube.com/channel/UC4Pwb1Utd_Pu3tEp09gMZlQ" target="_blank" title="YouTube(External website that opens in a new window)">
+		<img src="/resources/css/cupertino/images/youtube_icon.png" style="margin-left:10px" alt="link to YouTube"></a>
+		</p>-->  <br>
+			<p>
+				
+				Last Updated on:
+				10-Apr-2022<br> Best Viewed in 1024 X 768 resolution, Chrome 40
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+	</tr>
+	<tr>
+		<td class="ft_bottom" colspan="4">© This is the official website
+			of Central Board of Indirect Taxes and Customs (CBIC), Department of Revenue,
+			Ministry of Finance, Government of India.</td>
+	</tr>
+
+
+</tbody></table>
+
+
+</div>
+</div>
+
+
+</body></html>
